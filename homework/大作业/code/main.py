@@ -49,4 +49,6 @@ if __name__ == "__main__":
         train_loss_list.append(mean_loss)
     
     plt.plot(train_loss_list)
+    plt.title("Training Loss")
     plt.show()
+    plt.savefig('loss')
