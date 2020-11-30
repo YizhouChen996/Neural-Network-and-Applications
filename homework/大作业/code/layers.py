@@ -16,6 +16,19 @@ class Relu:
         dx = dout
         return dx
 
+class Tanh:
+    def __init__(self):
+        self.out = None
+    
+    def forward(self, x):
+        out = tanh(x)
+        self.out = out
+        return out
+
+    def backward(self, dout):
+        dx = dout*(1-self.out**2)
+        return dx
+        
 class Sigmoid:
     def __init__(self):
         self.out = None
