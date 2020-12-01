@@ -62,7 +62,7 @@ class FC:
         self.dB = np.sum(dout, axis=1, keepdims=True)
         return dx
 
-class Output:
+class Loss:
     def __init__(self):
         self.y = None
         self.t = None
