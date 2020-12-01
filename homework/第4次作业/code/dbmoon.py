@@ -34,7 +34,7 @@ class DBMOON:
         plt.savefig("dbdata")
 
 if __name__ == "__main__":
-    dataset = DBMOON(1000, 10, 6, 1)
+    dataset = DBMOON(1000, 10, 6, -2)
     dataA, dataB = dataset.gen_dbdata()
     print(dataB)
     dataset.plot()

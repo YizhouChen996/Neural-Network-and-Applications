@@ -25,7 +25,7 @@ class ThreeLayerNet:
         self.layers['relu2'] = Relu()
         self.layers['fc3'] = FC(self.params['W3'], self.params['B3'])
 
-        self.lastlayer = Output()
+        self.lastlayer = Loss()
 
     def predict(self, x):
         for layer in self.layers.values():
