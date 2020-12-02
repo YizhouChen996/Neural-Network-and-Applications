@@ -16,9 +16,9 @@ if __name__ == "__main__":
     network = OneLayerNet(input_size=1, hidden_size=5, output_size=1)
 
     # 设置超参数
-    iters_num = 50000
+    iters_num = 400000
     train_size = x_train.shape[1]
-    batch_size = 5
+    batch_size = 2
     learning_rate = 0.0001
     train_loss_list = []
     iter_per_epoch = max(train_size / batch_size, 1)
@@ -40,12 +40,28 @@ if __name__ == "__main__":
             mean_loss = np.sum(loss, axis=1) / loss.shape[1]
             print("No.{} epoches' loss:{}".format((int)(i/iter_per_epoch)+1, mean_loss))
             train_loss_list.append(mean_loss)
-   
+    
+    params, t, y, z = network.get_weights(2)
+    print('params:{}'.format(params))
+    print('t:{}'.format(t))
+    print('y:{}'.format(y))
+    print('z:{}'.format(z))
+
     # 绘制损失函数图像
     fig2 = plt.figure()
     plt.plot(train_loss_list)
     plt.title("Training Loss")
+    plt.savefig("sin_loss")
     plt.show()
+
+    # 绘制拟合图像
+    fig3 = plt.figure()
+    test = network.predict(x_train)
+    print(test)
+    plt.title('sin(x)')
+    plt.plot(np.arange(-5, 5, 0.1), test.reshape((100,)))
+    plt.savefig('sin')
+
     '''
     # 绘制拟合后预测结果
     fig3 = plt.figure()

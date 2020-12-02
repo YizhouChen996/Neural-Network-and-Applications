@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.23)  30 NOV 2020 09:26
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.23)  2 DEC 2020 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1040,17 +1040,69 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+File: dbmoon.png Graphic file (type bmp)
+<dbmoon.png>
+
+Overfull \hbox (72.55898pt too wide) in paragraph at lines 42--43
+ [][] 
+ []
+
+File: code/dbdata.png Graphic file (type bmp)
+<code/dbdata.png>
+[1
 
 ]
-(./NN_homework_4.aux) ) 
-Here is how much of TeX's memory you used:
- 14673 strings out of 492970
- 320672 string characters out of 6133937
- 435875 words of memory out of 5000000
- 18571 multiletter control sequences out of 15000+600000
- 537774 words of font info for 60 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 42i,6n,62p,10444b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
+File: slp.png Graphic file (type bmp)
+<slp.png>
+File: code/slp.png Graphic file (type bmp)
+<code/slp.png>
+ [2]
+File: code/bp.png Graphic file (type bmp)
+<code/bp.png>
+ [3]
+File: dataset.png Graphic file (type bmp)
+<dataset.png>
+File: hand.png Graphic file (type bmp)
+<hand.png>
 
-Output written on NN_homework_4.pdf (1 page).
+Overfull \hbox (1.29642pt too wide) in paragraph at lines 87--88
+ [][] 
+ []
+
+
+Overfull \hbox (44.80002pt too wide) in paragraph at lines 95--100
+ [][] 
+ []
+
+File: code/result.png Graphic file (type bmp)
+<code/result.png>
+[4]
+File: loss.png Graphic file (type bmp)
+<loss.png>
+
+Overfull \hbox (38.63618pt too wide) in paragraph at lines 120--121
+ [][] 
+ []
+
+File: code/sin_loss.png Graphic file (type bmp)
+<code/sin_loss.png>
+[5]
+File: code/sin.png Graphic file (type bmp)
+<code/sin.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+[6] [7] (./NN_homework_4.aux) ) 
+Here is how much of TeX's memory you used:
+ 14805 strings out of 492970
+ 324913 string characters out of 6133937
+ 440875 words of memory out of 5000000
+ 18679 multiletter control sequences out of 15000+600000
+ 542246 words of font info for 79 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 42i,8n,62p,10444b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on NN_homework_4.pdf (7 pages).

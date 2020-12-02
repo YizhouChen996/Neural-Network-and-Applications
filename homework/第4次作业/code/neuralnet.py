@@ -59,7 +59,7 @@ class ThreeLayerNet:
 
 class OneLayerNet:
     
-    def __init__(self, input_size, hidden_size, output_size, weight_init_std = 0.1):
+    def __init__(self, input_size, hidden_size, output_size, weight_init_std = 0.001):
         # 初始化权重
         self.params = {}
         
@@ -104,6 +104,13 @@ class OneLayerNet:
         grads['W1'], grads['B1'] = self.layers['fc1'].dW, self.layers['fc1'].dB
         grads['W2'], grads['B2'] = self.layers['fc2'].dW, self.layers['fc2'].dB
         return grads
+    
+    def get_weights(self, x):
+        t = self.layers['fc1'].forward(x)
+        y = self.layers['relu1'].forward(t)
+        z = self.layers['fc2'].forward(y)
+        params = self.params
+        return params, t, y, z
 
 
 if __name__ == "__main__":

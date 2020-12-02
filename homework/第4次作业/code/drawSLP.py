@@ -12,8 +12,8 @@ if __name__ == "__main__":
     train_label = data[2, :]
     # print(train_data)
 
-    slp = SLP(input_size=2, learning_rate=0.1)
-    predict_result = slp.train(train_data, train_label, 20)
+    slp = SLP(input_size=2, learning_rate=0.01)
+    predict_result = slp.train(train_data, train_label, 10)
     # print(predict_result)
 
     res_old = 0
